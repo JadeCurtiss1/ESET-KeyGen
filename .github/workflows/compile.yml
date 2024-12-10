@@ -1,6 +1,5 @@
 name: Compile the project
-on:
-  workflow_dispatch:
+on: [pull_request, workflow_dispatch]:
     inputs:
       version:
         description: 'File version (Without spaces and brackets) (Eg: 1.1.0.0, 1.1.0.0-pre)'
